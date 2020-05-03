@@ -1,0 +1,15 @@
+<% provide(:title, "Show") %>
+<% user =  hello @user %> <!-- #hello is a helper method that takes in the @user param find the helper at "../helper/users_helper.rb" -->
+<%= user[:name] %>
+
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+    </section>
+  </aside>
+</div>
+
