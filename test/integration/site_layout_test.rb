@@ -24,4 +24,9 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select "title", full_title("signup")
   end
 
+  test "show_user_route" do
+    get user_path(2)
+    assert_template 'users/show'
+    assert_select "title", full_title("Show")
+  end
 end

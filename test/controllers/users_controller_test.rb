@@ -6,4 +6,9 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get show" do
+    get user_path(2)
+    assert_response :success
+  end
+
 end

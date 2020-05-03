@@ -6,6 +6,7 @@ class StaticPagesController < ApplicationController
   end
 
   def about
+    @params = (params.to_yaml)
   end
 
   def contact
