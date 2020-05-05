@@ -94,3 +94,4 @@ production:
   database: railsTutorial_production
   username: railsTutorial
   password: <%= ENV['RAILSTUTORIAL_DATABASE_PASSWORD'] %>
+
